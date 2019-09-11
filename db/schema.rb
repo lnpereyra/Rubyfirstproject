@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2019_09_11_021814) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.integer "visits_count"
+    t.integer "visits_count", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
