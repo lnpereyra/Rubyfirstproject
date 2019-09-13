@@ -17,6 +17,10 @@ class Article < ApplicationRecord
     has_attached_file :cover, styles: { medium: "12380x720", thumb:"800x600" } 
     validates_attachment_content_type :cover, content_type: /\Aimage\/.*\Z/ 
 
+    scope :publicados, ->{ where(state: "published")}
+
+    scope :ultimos, ->{order("created_at DESC").limit(10)}
+
     def categories=(value)
         @categories = value
     end
