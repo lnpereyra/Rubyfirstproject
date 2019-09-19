@@ -31,7 +31,7 @@ a,a:visited {
 }
 
 .blue{
-    color:  rgb(60, 50, 200) !important;
+    color:  rgb(29, 137, 187) !important;
 }
 
 .be-red {
@@ -41,11 +41,12 @@ a,a:visited {
 .white {
     color: white;
 }
-
+.grey{
+    color: #616161
+}
 .large-padding {
     padding: 10px 7px;
 } 
-
 .field,.top-space,.actions{
     margin-top: 1em;
 }
@@ -53,12 +54,26 @@ a,a:visited {
     background-position: center;
     background-size: cover;
 }
-
 .text-left{
     text-align: left;
 }
 .text-center{
     text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+.be-big{
+    font-size: 2em;
+}
+.be-small{
+    font-size: 12px;
+}
+.underline{
+    text-decoration: underline;
 }
 .article-height{
     height:150px;
@@ -78,5 +93,6 @@ a,a:visited {
     padding: 10px 0px;
     font-size: 1.2em;
 }
-
-
+.bottom-space{
+    margin-bottom: 2em;
+}
