@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :destroy, :update, :show]
   end
   devise_for :users
-  root 'welcome#index'
+  root 'articles#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   get"/dashboard", to: "welcome#dashboard"
